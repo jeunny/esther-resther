@@ -1,0 +1,90 @@
+            body {
+                background-color:rgb(255, 187, 187);
+                color:rgb(161, 33, 11);
+                margin:40px;
+
+                font-family: 'Raleway', sans-serif;
+            }
+            
+            img {
+                max-width:100%;
+                width:500px;
+                
+            }
+            p {
+                color:hotpink;
+                background-color:rgb(43, 40, 37);
+                
+                font-size:20px;
+                border:10px inset rgb(224, 126, 123);
+                border-radius:20px;
+
+                padding:30px;
+                
+                max-width:500px;
+
+                overflow:auto;
+
+                text-align:justify;
+                line-height:23px;
+
+            }
+
+            h1 {
+                color: rgb(96, 78, 201);
+            }
+
+            .special {
+                color:brown;
+                background-color:rgb(255, 127, 170);
+                font-family: 'Kalam', cursive;
+
+            }
+
+            .special:hover {
+                background-color:khaki;
+                text-align:center;
+                filter:blur(5px);
+            }
+
+
+            /* css rules that are further down in the document have higher specificity */
+            
+            .neat {
+                color:rgb(20, 73, 48);
+            }
+
+            .cool {
+              font-weight:bold;
+            text-decoration:underline wavy;
+            font-style:italic;
+            color:rgb(222, 177, 255);
+            }
+
+            .dim {
+                background-color:coral;
+                padding:10px;
+                margin:10px;
+
+                width:200px;
+                height:200px;
+            }
+
+            .spam {
+                background-color:darkkhaki;
+                padding:10px;
+                margin:10px;
+                font-family: 'Ysabeau', sans-serif;
+            }
+
+            a {
+                color:rgb(119, 26, 54);
+            }
+
+            a:visited {
+                color:lightgreen;
+            }
+
+            a:hover {
+                background-color:black;
+            }

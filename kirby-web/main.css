@@ -1,0 +1,158 @@
+body {
+    background-color:rgb(214, 242, 247);
+     background-repeat:no-repeat;
+     background-size:cover;
+    margin-left:0%;
+    margin-top:30px;
+    
+    
+    font-weight:bold;
+    line-height:auto;
+    
+    
+    font-family:'Courier New', Courier, monospace;
+
+    max-width:fit-content;
+    display:block;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 40px; 
+}
+
+.bodyborder {
+  /* https://css-tricks.com/body-border/ */
+    overflow-x: hidden;
+    -webkit-box-shadow:
+      inset #19d4ff 0 0 0 5px,
+      inset #18cdf7 0 0 0 1px,
+      inset #53dfff 0 0 0 10px,
+      inset #50d8f7 0 0 0 11px,
+      inset #8ce9ff 0 0 0 16px,
+      inset #88e2f7 0 0 0 17px,
+      inset #c5f4ff 0 0 0 22px,
+      inset #bfecf7 0 0 0 23px;
+    -moz-box-shadow:
+      inset #19d4ff 0 0 0 5px,
+      inset #18cdf7 0 0 0 1px,
+      inset #53dfff 0 0 0 10px,
+      inset #50d8f7 0 0 0 11px,
+      inset #8ce9ff 0 0 0 16px,
+      inset #88e2f7 0 0 0 17px,
+      inset #c5f4ff 0 0 0 22px,
+      inset #bfecf7 0 0 0 23px;
+    box-shadow:
+      inset #19d4ff 0 0 0 5px,
+      inset #18cdf7 0 0 0 1px,
+      inset #53dfff 0 0 0 10px,
+      inset #50d8f7 0 0 0 11px,
+      inset #8ce9ff 0 0 0 16px,
+      inset #88e2f7 0 0 0 17px,
+      inset #c5f4ff 0 0 0 22px,
+      inset #bfecf7 0 0 0 23px;
+}
+
+.center {
+    display:block;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+
+
+h1 {
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  color:rgb(124, 8, 8);
+  font-size:40px;
+  background-color:aliceblue;
+  border:4px double rgb(238, 191, 89);
+  padding:20px;
+  max-width:fit-content;
+
+}
+
+h2 {
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  color:rgb(150, 54, 54);
+  font-size:25px;
+  font-family: monospace;
+}
+
+p {
+ 
+    text-align:center;
+    color:rgb(207, 78, 78);
+}
+
+a {
+ 
+  text-align:center;
+  color:rgb(207, 78, 78);
+  
+}
+
+.centerbutton {
+
+  margin: 0;
+  position: absolute;
+ 
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.maxwidth {
+  max-width:100%;
+}
+
+.container {
+  display: flex;
+  flex-direction:column;
+  width:fit-content;
+  border: 2px dashed rgb(255, 165, 165);
+  padding:50px;
+  overflow:auto;
+  max-width:1000px;
+  
+}
+
+.containercollection {
+  display: flex;
+  
+  width:fit-content;
+  border: 2px dashed rgb(255, 165, 165);
+  padding:50px;
+  overflow:auto;
+  max-width:600px;
+  align-content:space-between;
+  background-color:rgba(255, 255, 255, 0.397);
+  
+}
+
+ul.myUL {
+ display:inline-block;
+ text-align:left; 
+}
+
+ul {
+  color:rgb(226, 113, 188);
+  list-style:symbols(cyclic"\U+2606");
+}
+
+@font-face {
+  font-family: 'kirby_classicroman';
+  src: url('kirby-classic-webfont.woff2');
+
+}
+
+h3 {
+  font-family:'kirby_classicroman';
+  font-size:40px;
+  text-align:center;
+}
