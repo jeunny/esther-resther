@@ -1,2 +1,2 @@
 # esther-resther
-class site!
+class site for handmade web! summer 2023 
