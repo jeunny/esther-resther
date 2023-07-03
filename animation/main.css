@@ -1,0 +1,92 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+}
+.life {
+    background-color:rgb(255, 122, 189);
+    width:200px;
+    height:200px;
+    animation: living 5s 1s infinite alternate linear;
+    
+}
+
+@keyframes living {
+    0% {
+        background-color:rgb(146, 190, 255);
+    }
+   
+    100% {
+        background-color:rgb(255, 178, 134);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color:rgb(146, 190, 255);
+        transform:scale(1);
+    }
+   
+    100% {
+        background-color:rgb(255, 178, 134);
+        transform:scale(1.6);
+    }
+}
+
+.container {
+    background-color:rgb(90, 108, 211);
+    height:100vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle {
+    background-color:rgb(255, 151, 78);
+    width:15vw;
+    height:15vw;
+    border-radius:100%;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.square {
+    background-color:rgb(246, 255, 124);
+    width:15vw;
+    height:15vw;
+    animation:spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0);
+        
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+    
+}
+
+.mover {
+    background-color:rgb(160, 244, 255);
+    width:15vw;
+    height:3vw;
+    position:fixed;
+    bottom:0;
+    left:0;
+    animation:move 3s infinite;
+
+}
+
+@keyframes move {
+    0% {
+        /* left:-15vw; */
+        transform:translateX(-15vw) rotate(0);
+    }
+    100% {
+        /* left:100vw; */
+        transform:translateX(100vw) rotate(360deg);
+    }
+}

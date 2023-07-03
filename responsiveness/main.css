@@ -1,0 +1,40 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color:lightcoral;
+}
+
+.responsive {
+    background-color:azure;
+    padding:20px;
+    width:100px;
+    height:100px;
+    font-size: 10px;
+    transition:all .3s;
+}
+
+@media screen and (max-width:900px) {
+ body {
+    background-color:rgb(255, 148, 105);
+ }   
+ .responsive {
+    background-color:blanchedalmond;
+    width:200px;
+    height:200px;
+    font-size:20px;
+ }
+}
+
+@media screen and (max-width:700px) {
+    body {
+       background-color:rgb(255, 193, 169);
+    }   
+    .responsive {
+       background-color:rgb(255, 248, 237);
+       width:300px;
+       height:300px;
+       font-size:30px;
+    }
+   }

@@ -1,4 +1,28 @@
 body {
-    background-color:rgb(220, 253, 220);
-    color:brown;
+    background-color:rgb(35, 22, 94);
+    color:rgb(254, 255, 213);
+}
+
+.container {
+    align-items:center;
+    justify-content:center;
+
+}
+
+.image {
+    height:30px;
+    float:right;
+
+}
+
+a {
+    text-align:center;
+}
+
+h1 {
+    size:60px;
+}
+
+h2 {
+    size:40px;
 }

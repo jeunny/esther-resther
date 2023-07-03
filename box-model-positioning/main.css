@@ -1,0 +1,122 @@
+body {
+    margin:0;
+}
+
+.content-box {
+    background-color:rgb(255, 160, 180);
+    width:300px;
+    height:300px;
+    padding:10px;
+    border:10px dashed beige;
+    margin:10px;
+    box-sizing:content-box;
+}
+
+.border-box {
+    background-color:rgb(142, 243, 209);
+    width:300px;
+    height:300px;
+    padding:10px;
+    border:10px dashed rgb(163, 49, 163);
+    margin:10px;
+    box-sizing:border-box;
+}
+
+.square {
+    background-color:lightsalmon;
+    width:100px;
+    height:100px;
+    border:1px solid rgb(168, 191, 255);
+    margin:10px;                                                                 
+}
+
+.relative {
+background-color:burlywood;
+position:relative;
+top:30px;
+left:30px;
+}
+
+.fixed {
+    background-color:pink;
+    position:fixed;
+   top:0;
+   right:0;
+    margin:0;
+}
+
+.absolute {
+    background-color:darkseagreen;
+    position:absolute;
+    top:100px;
+    right:100px;
+}
+
+.container {
+    background-color:cornflowerblue;
+    width:300px;
+    height:300px;
+    position:relative;
+}
+
+.sticky {
+    background-color:mediumseagreen;
+    position:sticky;
+    top:50px;
+
+}
+
+.smiley {
+    background-color:rgb(255, 207, 152);
+    width:300px;
+    height:300px;
+    border:3px solid rgb(190, 28, 28);
+    border-radius:100%;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.eye {
+    background-color:crimson;
+    width:50px;
+    height:50px;
+    border:2px solid purple;
+    border-radius:100%;
+    position:absolute;
+    top:80px;
+    
+}
+
+.left {
+    left:60px;
+    
+}
+
+.right {
+    right:60px;
+   
+}
+
+.mouth {
+    background-color:black;
+    border:3px solid white;
+    width:200px;
+    height:50px;
+    border-radius:100%;
+    position:absolute;
+    bottom:80px;
+    left:50px;
+}
+
+.hat {
+    background-color:mediumpurple;
+    border:3px solid darkolivegreen;
+    width:340px;
+    height:100px;
+    position:absolute;
+    top:-50px;
+    left:-20px;
+    border-radius:100% 100% 0 0;
+}

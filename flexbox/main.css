@@ -1,0 +1,28 @@
+* {
+    box-sizing:border-box;
+}
+
+.container {
+    background-color:blanchedalmond;
+    padding:10px;
+    height:500px;
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+
+    justify-content:center;
+    align-content:center;
+
+    gap:10px;
+}
+
+.item {
+    background-color:rgb(162, 218, 162);
+    padding:10px;
+    border:1px solid;
+
+    width:200px;
+    
+}
+
