@@ -1,0 +1,11 @@
+* {
+    box-sizing:border-box;
+}
+
+.active {
+    padding:20px;
+    background-color:brown;
+    color:white;
+    font-size:20px;
+    
+}

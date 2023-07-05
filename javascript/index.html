@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>javascript</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+    <!-- first we set up the button that is triggering our javascript-->
+
+    <!-- note that the element doesn't need to be a <button> in order to work-->
+
+        <button onclick="FUNCTION">click me!</button>
+
+    <!-- this is the element that we will be altering with our javascript-->
+
+        <div id="menu" class="box">THE BOX</div>
+
+
+        <script>
+            // this is the function we want to call when the button is clicked
+            function FUNCTION() {
+              // first we set up a variable to store a longer line of code in case we want to reference it quickly later
+              // here, we're creating a shorthand way of targeting a specific element with an id by using javascript's getElementById method
+              var VARIABLE = document.getElementById("ID");
+            
+              // in this line we use javascript's built-in classList property and toggle method to toggle a class on and off
+              VARIABLE.classList.toggle("NEW-CLASS");
+            }
+            </script>
+    </body>
+</html>
