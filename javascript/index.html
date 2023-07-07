@@ -7,27 +7,27 @@
     </head>
 
     <body>
-    <!-- first we set up the button that is triggering our javascript-->
 
-    <!-- note that the element doesn't need to be a <button> in order to work-->
+        <button onclick="change()">click me!</button>
 
-        <button onclick="FUNCTION">click me!</button>
-
-    <!-- this is the element that we will be altering with our javascript-->
 
         <div id="menu" class="box">THE BOX</div>
 
+        <div id="spinner" class="object"></div>
 
         <script>
-            // this is the function we want to call when the button is clicked
-            function FUNCTION() {
-              // first we set up a variable to store a longer line of code in case we want to reference it quickly later
-              // here, we're creating a shorthand way of targeting a specific element with an id by using javascript's getElementById method
-              var VARIABLE = document.getElementById("ID");
+        
+            function change() {
+                console.log("menu button clicked");
             
-              // in this line we use javascript's built-in classList property and toggle method to toggle a class on and off
-              VARIABLE.classList.toggle("NEW-CLASS");
+            var menu = document.getElementById("menu");
+            var spinner = document.getElementById("spinner");
+
+              menu.classList.toggle("active");
+              spinner.classList.toggle("spin");
+              document.body.classList.toggle("dark");
             }
             </script>
+
     </body>
 </html>
