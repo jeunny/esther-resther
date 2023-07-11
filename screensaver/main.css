@@ -1,3 +1,118 @@
 * {
     box-sizing:border-box;
 }
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  margin:0;
+    overflow: hidden;
+}
+
+.sqarr {
+    width: 2024px;
+    height: 2079px;
+    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+
+    transform: scale(random(4s));
+    transform-origin: 0 0;
+  }
+
+
+
+
+  .sqanim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+    background-color: #ff77a0;
+    box-shadow: 0 0 3px 3px #ffffff, 0 0 0 0 rgb(253, 185, 255), 0 0 0 0 #ffffff;
+    opacity: 0;
+    animation: expanding linear 3s infinite;
+    border-radius: 20%;
+    animation-delay:4s;
+  }
+
+  .sqanim2 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+   
+    background-color: #dfffa3;
+    box-shadow: 0 0 3px 3px #dacaff, 0 0 0 0 rgb(241, 103, 103), 0 0 0 0 #91dcff;
+    opacity: 0;
+    animation: expanding linear 5s infinite;
+    border-radius: 20%;
+  }
+  
+
+  .sqanim3 {
+    position: absolute;
+    top: -30%;
+    left: 1%;
+   
+    background-color: #ff6c8c;
+    box-shadow: 0 0 3px 3px #a159ff, 0 0 0 0 rgb(138, 75, 34), 0 0 0 0 #eeff8d;
+    opacity: 0;
+    animation: expanding linear 20s infinite;
+    border-radius: 20%;
+  }
+  
+
+  .sqanim4 {
+    position: absolute;
+    top:-70%;
+    left: 90%;
+   
+    background-color: #ffb1b1;
+    box-shadow: 0 0 3px 3px #fff9c0, 0 0 0 0 rgb(123, 69, 209), 0 0 0 0 #bcd1ff;
+    opacity: 0;
+    animation: expanding linear 7s infinite;
+    border-radius: 20%;
+  }
+  
+  .sqanim5 {
+    position: absolute;
+    top:80%;
+    right: 90%;
+   
+    background-color: #ffb1b1;
+    box-shadow: 0 0 3px 3px #fff9c0, 0 0 0 0 rgb(209, 69, 104), 0 0 0 0 #bcffbf;
+    opacity: 0;
+    animation: expanding linear 12s infinite;
+    border-radius: 20%;
+  }
+
+  .sqanim5 {
+    position: absolute;
+    top:-80%;
+    right: 100%;
+   
+    background-color: #bdb1ff;
+    box-shadow: 0 0 3px 3px #ffc0fa, 0 0 0 0 rgb(101, 145, 238), 0 0 0 0 #ccffbc;
+    opacity: 0;
+    animation: expanding linear 6s infinite;
+    border-radius: 20%;
+  }
+
+  @keyframes expanding {
+    45% {
+      opacity: 50%;
+    }
+   
+   
+    55% {
+      opacity: 1;
+      box-shadow: 0 0 0 300px rgb(170, 52, 52), 0 0 0 300px #ffffff;
+    }
+    100% {
+      opacity: 0;
+      box-shadow: 0 0 0 500px rgb(99, 39, 167), 0 0 0 600px #ffffff;
+    }
+  }
+
+  
