@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+html {
+    cursor:url(cursor.png), auto;
+    
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.774); 
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(227, 222, 230); 
+    
+  }
+
+a:hover {
+    cursor:url(clicky.png), auto;
+    color:rgba(255, 255, 255, 0.39);
+  }
+
+body {
+  height: calc(100vh - 8em);
+  padding: 10px;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+
+.image {
+    height:30px;
+    float:right;
+
+}
+
+a {
+    text-align:center;
+}
+
+footer {
+    text-align:center;
+    
+}
+
+.topline {
+    position: relative;
+    top: 10%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+
+.container {
+   
+    justify-content:center;
+ 
+    max-width:800px;
+    margin:auto;
+    
+    max-height:600px;
+    overflow:auto;
+    display:list-item;
+    border:2px double rgba(255, 255, 255, 0.795);
+    padding:40px;
+    align-content:center;
+}
+
+
+.typewriter{
+  animation: typewriter 4s steps(30) 1s 1 normal both,
+             blinkTextCursor 500ms steps(30) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 17em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
