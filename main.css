@@ -18,7 +18,7 @@ h1 {
     position:absolute;
     font-size:120%;
     right:35%;
-    top:19.1%;
+    top:19.5%;
 
 }
 
@@ -45,7 +45,7 @@ h1 {
     right:3.5%;
 }
 
-
+/* USERS */
 
 .user1 {
     position:absolute;
@@ -69,45 +69,85 @@ h1 {
     &:hover {
         border-radius: 50%;
     position: fixed;
-    box-shadow: 0px 0px 0px 4px rgb(149, 248, 255), 0px 0px 50px inset;
+    box-shadow: 0px 0px 0px 3px rgb(149, 248, 255), 0px 0px 50px inset;
         filter: brightness(110%);
     }
 }
-
+/* 5 BUTTS */
 .aboutbutt {
     position:absolute;
     top:60.52%;
     height:70px;
-    left:38%;
-}
-.questionbutt {
+    left:38%;}.questionbutt {
     position:absolute;
     top:60.52%;
     height:70px;
-    left:42.53%;
-}
-.randobutt {
+    left:42.53%;}.randobutt {
     position:absolute;
     top:60.52%;
     height:70px;
-    left:47.1%;
-
-}
-.settingbutt {
+    left:47.1%;}.settingbutt {
     position:absolute;
     top:60.52%;
     height:70px;
-    left:51.69%;
-
-}
-
-.powerbutt {
+    left:51.69%;}.powerbutt {
     position:absolute;
     top:60.52%;
     height:70px;
-    left:56.2%;
+    left:56.2%;}
+.bottom-highlight {
+    background: transparent;
+    transition:all 0.1s;
+    &:hover {
+        border-radius: 50%;
+    position: fixed;
+    box-shadow: 0px 0px 0px 3px rgb(237, 149, 255), 0px 0px 50px inset;
+        filter: brightness(130%);
+    }
 }
-
+/* CONSOLE BUTTS */
+.xbutt {
+    position:absolute;
+    height:60px;
+    top:17.8%;
+    right:9.4%;}.abutt {
+    position:absolute;
+    height:60px;
+    top:24%;
+    right:6.2%;}.bbutt {
+    position:absolute;
+    height:60px;
+    top:30%;
+    right:9.4%;}.ybutt {
+    position:absolute;
+    height:60px;
+    top:24%;
+    right:12.5%;
+}.butters:hover {
+box-shadow: 0 0 0 rgba(0,0,0,0.2), 0 0 0;
+margin: 2px -2px;}.upp {
+    position:absolute;
+    height:60px;
+    top:41.3%;
+    left:6.8%;}.downn {
+    position:absolute;
+    height:60px;
+    top:53.7%;
+    left:6.8%;}.leftt {
+    position:absolute;
+    height:60px;
+    top:47.68%;
+    left:3.7%;}.rightt {
+    position:absolute;
+    height:60px;
+    top:47.68%;
+    left:10%;
+}
+.butterss:hover {
+    box-shadow: 0 0 0 rgba(0,0,0,0.2), 0 0 0;
+    margin: 2px 2px;
+    }
+/* CAROUSEL */
 .caroucontainer {
     display:block;
     width:51%;
