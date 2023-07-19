@@ -4,8 +4,9 @@
         <title> &#9790; &#9734; &#9732;</title>
         <link rel="stylesheet" href="main.css">
         <link rel="icon" type="image/png" href="favicon.ico">
-      
+        
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script>
             (function(d) {
               var config = {
@@ -28,11 +29,11 @@
         <a href="https://handmade-web.net/summer23/community.html"><img class="user2 user-highlight" src="user2.png"></a>
         
         <!--EXTRA BOTTOM BUTTONS-->
-        <a href=""><img class="randobutt bottom-highlight" src="5butt/randobutt.png"></a>
-        <a href=""><img class="settingbutt bottom-highlight" src="5butt/settingbutt.png"></a>
-        <a href=""><img class="powerbutt bottom-highlight" src="5butt/powerbutt.png"></a>
-        <a href=""><img class="questionbutt bottom-highlight" src="5butt/questionbutt.png"></a>
-        <a href=""><img class="aboutbutt bottom-highlight" src="5butt/aboutbutt.png"></a>
+        <a href="#" onclick="randomUrl();" title="random 🎲 app"><img class="randobutt bottom-highlight" src="5butt/randobutt.png"></a>
+        <a href="" title="settings ⚙️"><img class="settingbutt bottom-highlight" src="5butt/settingbutt.png"></a>
+        <a href="" title="power"><img class="powerbutt bottom-highlight" src="5butt/powerbutt.png"></a>
+        <a href="" title="❓"><img class="questionbutt bottom-highlight" src="5butt/questionbutt.png"></a>
+        <a href="" title="about シ"><img class="aboutbutt bottom-highlight" src="5butt/aboutbutt.png"></a>
 
         <!--CONSOLE BUTTONS-->
         <img class="abutt butters" src="consolebutt/abutt.png">
@@ -45,9 +46,10 @@
         <img class="leftt butterss" src="consolebutt/leftt.png">
         <img class="rightt butterss" src="consolebutt/rightt.png">
 
-        <img class="abutt butters" src="consolebutt/abutt">
-        <img class="abutt butters" src="consolebutt/abutt">
-        
+        <img class="minusbutt pressbutts" src="consolebutt/minusbutt.png">
+        <img class="plusbutt pressbutts" src="consolebutt/plusbutt.png">
+        <img class="capturebutt pressbutts" src="consolebutt/capturebutt.png">
+        <img class="homebutt pressbutts" src="consolebutt/homebutt.png">
 
 
         <h1 id="time"></h1>
@@ -64,6 +66,7 @@
           <img class="carousel-cell" src="apps/lastapp.png"></img>
         </div>
     </div>
+
         <script>
         let time=document.getElementById("time") 
 
@@ -74,7 +77,20 @@
     },1000)
        
         </script> 
-      
+
+      <script>
+        var urlArray = [
+         "kirby-web/index.html",
+          "structure/index.html",
+          "screensaver/index.html",
+        "journals.html"
+        ];
+         function randomUrl() {
+        var randomNumber = Math.floor(Math.random() * urlArray.length);
+         var newUrl = urlArray[randomNumber];
+        window.location.href = newUrl;
+        }
+      </script>
 
         <script>
             const sleep=document.getElementById("sleep");
