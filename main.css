@@ -17,8 +17,8 @@ body {
 h1 {
     position:absolute;
     font-size:120%;
-    right:30%;
-    top:17%;
+    right:35%;
+    top:19.1%;
 
 }
 
@@ -44,11 +44,75 @@ h1 {
     top:6.1%;
     right:3.5%;
 }
+
+
+
+.user1 {
+    position:absolute;
+    top:20%;
+    height:46px;
+    left:24.6%;
+}
+
+.user2 {
+    position:absolute;
+    top:20%;
+    height:46px;
+    left:27.6%;
+}
+
+.user-highlight {
+
+    background: transparent;
+    
+    transition:all 0.1s;
+    &:hover {
+        border-radius: 50%;
+    position: fixed;
+    box-shadow: 0px 0px 0px 4px rgb(149, 248, 255), 0px 0px 50px inset;
+        filter: brightness(110%);
+    }
+}
+
+.aboutbutt {
+    position:absolute;
+    top:60.52%;
+    height:70px;
+    left:38%;
+}
+.questionbutt {
+    position:absolute;
+    top:60.52%;
+    height:70px;
+    left:42.53%;
+}
+.randobutt {
+    position:absolute;
+    top:60.52%;
+    height:70px;
+    left:47.1%;
+
+}
+.settingbutt {
+    position:absolute;
+    top:60.52%;
+    height:70px;
+    left:51.69%;
+
+}
+
+.powerbutt {
+    position:absolute;
+    top:60.52%;
+    height:70px;
+    left:56.2%;
+}
+
 .caroucontainer {
     display:block;
     width:51%;
     position:absolute;
-    top:40%;
+    top:32%;
     left:23%;
 
 }
