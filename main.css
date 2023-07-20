@@ -8,14 +8,6 @@ body {
     font-style: normal;
 }
 
-
-
-.container {
-    align-items:center;
-    justify-content:center;
-
-}
-
 h1 {
     position:absolute;
     font-size:120%;
@@ -152,29 +144,66 @@ margin: 2px -2px;}.upp {
     position:absolute;
     width:42px;
     top:14.5%;
-    left:11.38%;
-}.plusbutt {
+    left:11.38%;}.plusbutt {
     position:absolute;
     width:42px;
     top:13%;
-    right:13.9%;
-}.capturebutt {
+    right:13.9%;}.capturebutt {
     position:absolute;
-    height:48px;
-    top:63.5%;
-    left:9.55%;
-}.homebutt {
+    height:49px;
+    top:63.4%;
+    left:9.52%;}.homebutt {
     position:absolute;
     height:59px;
     top:62.5%;
-    right:11.46%;
-}
+    right:11.46%;}
 .pressbutts {
-
-&:hover {
+    &:hover {
     border: 2px solid rgba(66, 68, 68, 0);
     }
 }
+/* BUTTON INTERACTION */
+
+  .aboutcover {
+    display: none;
+    position: absolute;
+    top: 16.6%;
+    left: 22%;
+    width: 1035px;
+    height: 587px;
+    background-color: rgba(54, 54, 54, 0.979);
+    z-index: 1; 
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 90%;
+    right: 475px;
+    height:25px;
+    color: white;
+    cursor: pointer;
+  }
+  .aboutcover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  .power {
+    display: none;
+    position: absolute;
+    top: 16.6%;
+    left: 22%;
+    width: 1035px;
+    height: 587px;
+    background-color: rgb(32, 32, 32);
+    z-index: 1; 
+  }
+  
+
 /* CAROUSEL */
 .caroucontainer {
     display:block;
