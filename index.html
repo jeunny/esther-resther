@@ -31,10 +31,17 @@
         <!--EXTRA BOTTOM BUTTONS-->
         <a href="#" onclick="randomUrl();" title="random 🎲 app"><img class="randobutt bottom-highlight" src="5butt/randobutt.png"></a>
         <a href="" title="settings ⚙️"><img class="settingbutt bottom-highlight" src="5butt/settingbutt.png"></a>
-        
-        <a href="" title="❓"><img class="questionbutt bottom-highlight" src="5butt/questionbutt.png"></a>
 
-        <div><img title="power" class="power bottom-highlight"  src="5butt/powerbutt.png" id="power-trigger"> <div class="power" id="power">
+        <div><img title="❓" class="questionbutt bottom-highlight"  src="5butt/questionbutt.png" id="aboutcover-trigger"> <div class="aboutcover" id="aboutcover">
+          <img class="close-btn" id="close-btn" src="consolebutt/goback.png">
+          <div class="aboutcover-content">
+             <h2>WHAT IS THIS</h2>
+             <hr>
+             <p>work in progro</p>
+        </div></div>
+
+        <div><img title="power" class="powerbutt bottom-highlight"  src="5butt/powerbutt.png" id="power-trigger"> <div class="power" id="power">
+          <img class="abutt" id="abutt" src="consolebutt/abutt.png">
            </div></div>
 
         <div><img title="about シ" class="aboutbutt bottom-highlight"  src="5butt/aboutbutt.png" id="aboutcover-trigger"> <div class="aboutcover" id="aboutcover">
@@ -116,7 +123,9 @@ document.getElementById("close-btn").addEventListener("click", function() {
     document.getElementById("power-trigger").addEventListener("click", function() {
    document.getElementById("power").style.display = "block";
  });
- 
+ document.getElementById("abutt").addEventListener("click", function() {
+  document.getElementById("power").style.display = "none";
+});
  
  </script>
        
