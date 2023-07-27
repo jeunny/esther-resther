@@ -10,9 +10,10 @@ body {
 
 h1 {
     position:absolute;
-    font-size:120%;
+    font-size:1vw;
     right:35%;
     top:19.5%;
+   
 
 }
 
@@ -44,14 +45,14 @@ h1 {
 .user1 {
     position:absolute;
     top:20%;
-    height:46px;
+    width:2.5%;
     left:24.6%;
 }
 
 .user2 {
     position:absolute;
     top:20%;
-    height:46px;
+    width:2.5%;
     left:27.6%;
 }
 
@@ -70,25 +71,26 @@ h1 {
 /* 5 BUTTS */
 .aboutbutt {
     position:absolute;
-    top:60.52%;
-    height:70px;
+    top:60.7%;
+    width:3.8%;
     left:38%;}.questionbutt {
     position:absolute;
-    top:60.52%;
-    height:70px;
+    top:60.7%;
+    width:3.8%;
     left:42.53%;}.randobutt {
     position:absolute;
-    top:60.52%;
-    height:70px;
+    top:60.7%;
+    width:3.8%;
     left:47.1%;}.settingbutt {
     position:absolute;
-    top:60.52%;
-    height:70px;
+    top:60.7%;
+    width:3.8%;
     left:51.69%;}.powerbutt {
     position:absolute;
-    top:60.52%;
-    height:70px;
+    top:60.7%;
+    width:3.8%;
     left:56.2%;}
+
 .bottom-highlight {
     background: transparent;
     transition:all 0.1s;
@@ -102,38 +104,38 @@ h1 {
 /* CONSOLE BUTTS */
 .xbutt {
     position:absolute;
-    height:60px;
+    width:3.4%;
     top:17.8%;
     right:9.4%;}.abutt {
     position:absolute;
-    height:60px;
+    width:3.4%;
     top:24%;
     right:6.2%;}.bbutt {
     position:absolute;
-    height:60px;
+    width:3.4%;
     top:30%;
     right:9.4%;}.ybutt {
     position:absolute;
-    height:60px;
+    width:3.4%;
     top:24%;
     right:12.5%;
 }.butters:hover {
 box-shadow: 0 0 0 rgba(0,0,0,0.2), 0 0 0;
 margin: 2px -2px;}.upp {
     position:absolute;
-    height:60px;
+    width:3.4%;
     top:41.3%;
     left:6.8%;}.downn {
     position:absolute;
-    height:60px;
+    width:3.4%;
     top:53.7%;
     left:6.8%;}.leftt {
     position:absolute;
-    height:60px;
+    width:3.4%;
     top:47.68%;
     left:3.7%;}.rightt {
     position:absolute;
-    height:60px;
+    width:3.4%;
     top:47.68%;
     left:10%;
 }
@@ -142,21 +144,21 @@ margin: 2px -2px;}.upp {
     margin: 2px 2px;
     }.minusbutt {
     position:absolute;
-    width:42px;
-    top:14.5%;
+    width:2.14%;
+    top:14.6%;
     left:11.38%;}.plusbutt {
     position:absolute;
-    width:42px;
-    top:13%;
-    right:13.9%;}.capturebutt {
+    width:2.14%;
+    top:13.2%;
+    right:13.98%;}.capturebutt {
     position:absolute;
-    height:49px;
-    top:63.4%;
+    width:2.6%;
+    top:63.8%;
     left:9.52%;}.homebutt {
     position:absolute;
-    height:59px;
-    top:62.5%;
-    right:11.46%;}
+    width:3.3%;
+    top:62.86%;
+    right:11.43%;}
 .pressbutts {
     &:hover {
     border: 2px solid rgba(66, 68, 68, 0);
@@ -169,8 +171,8 @@ margin: 2px -2px;}.upp {
     position: absolute;
     top: 16.6%;
     left: 22%;
-    width: 1035px;
-    height: 587px;
+    width: 53.7%;
+    height: 63.6%;
     background-color: rgba(54, 54, 54, 0.979);
     z-index: 1; 
   }
@@ -181,6 +183,7 @@ margin: 2px -2px;}.upp {
     right: 475px;
     height:25px;
     color: white;
+    cursor:pointer;
     
   }
   .aboutcover-content {
@@ -191,7 +194,22 @@ margin: 2px -2px;}.upp {
     color: white;
     text-align: center;
   }
-
+  .question-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  .settings-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
   .power {
     display: none;
     position: absolute;
@@ -202,6 +220,7 @@ margin: 2px -2px;}.upp {
     background-color: rgb(32, 32, 32);
     z-index: 1; 
   }
+  
   
 
 /* CAROUSEL */
@@ -253,10 +272,10 @@ https://flickity.metafizzy.co
 .flickity-viewport{
     overflow:hidden;
     position:relative;
-    height:100%;
+    width:100%;
 }
 .flickity-slider{
-    position:absolute;width:30%;height:100%}
+    position:absolute;width:30%;}
 .flickity-enabled.is-draggable{
         -webkit-tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .flickity-enabled.is-draggable .flickity-viewport{
@@ -280,3 +299,16 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}
 .flickity-page-dots .dot.is-selected{opacity:1}
 
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .user1 {        top:10.4%;
+        left:26%;
+    }    .user2 {        top:10.4%;
+        left:29%;    }    .xbutt {        display:none;
+    }    .abutt {        display:none;    }.bbutt {        display:none;    }.ybutt {        display:none;
+    }.minusbutt {        display:none;    }    .plusbutt {        display:none;    }.capturebutt {        display:none;
+    }.homebutt {        display:none;    }.upp {        display:none;    }.downn {        display:none;
+    }.leftt {        display:none;    }.rightt {        display:none;    }.aboutbutt{top:22%;left:38.4%}.questionbutt{top:22%;left:42.7%}.randobutt{top:22%;left:47%}.settingbutt{top:22%;left:51.3%}.powerbutt{top:22%;left:55.8%} h1 {top:10.2%;} .caroucontainer {height:10%;top:15.2%;}.carousel-cell {width:40%; height:40%;}.flickity-prev-next-button {width:5%;height:35%}.flickity-page-dots .dot{width:2%;height:4%;}
+  }

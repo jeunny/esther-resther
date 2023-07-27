@@ -23,19 +23,26 @@
         <!-- <div>
         <img id="sleep" class="overlay" src="overlay.png">
         </div> -->
-
+        
          <!--USER ICONS-->
         <a href="https://jeunnyart.carrd.co"><img class="user1 user-highlight" src="user1.png"></a>
         <a href="https://handmade-web.net/summer23/community.html"><img class="user2 user-highlight" src="user2.png"></a>
         
         <!--EXTRA BOTTOM BUTTONS-->
         <a href="#" onclick="randomUrl();" title="random 🎲 app"><img class="randobutt bottom-highlight" src="5butt/randobutt.png"></a>
-        <a href="" title="settings ⚙️"><img class="settingbutt bottom-highlight" src="5butt/settingbutt.png"></a>
+        
+        <div><img title="settings ⚙️" class="settingbutt bottom-highlight"  src="5butt/settingbutt.png" id="settings-trigger"> <div class="aboutcover" id="settingcover">
+          <img class="close-btn" id="close-outed" src="consolebutt/goback.png">
+          <div class="settings-content">
+             <h2>SETTINGS</h2>
+             <hr>
+             <p>work in progro</p>
+        </div></div>
 
-        <div><img title="❓" class="questionbutt bottom-highlight"  src="5butt/questionbutt.png" id="aboutcover-trigger"> <div class="aboutcover" id="aboutcover">
-          <img class="close-btn" id="close-btn" src="consolebutt/goback.png">
-          <div class="aboutcover-content">
-             <h2>WHAT IS THIS</h2>
+        <div><img title="❓" class="questionbutt bottom-highlight"  src="5butt/questionbutt.png" id="question-trigger"> <div class="aboutcover" id="questioncover">
+          <img class="close-btn" id="close-out" src="consolebutt/goback.png">
+          <div class="question-content">
+             <h2>?</h2>
              <hr>
              <p>work in progro</p>
         </div></div>
@@ -116,6 +123,24 @@
 
 document.getElementById("close-btn").addEventListener("click", function() {
   document.getElementById("aboutcover").style.display = "none";
+});
+</script>
+<script>
+  document.getElementById("question-trigger").addEventListener("click", function() {
+ document.getElementById("questioncover").style.display = "block";
+});
+
+document.getElementById("close-out").addEventListener("click", function() {
+ document.getElementById("questioncover").style.display = "none";
+});
+</script>
+<script>
+  document.getElementById("settings-trigger").addEventListener("click", function() {
+ document.getElementById("settingcover").style.display = "block";
+});
+
+document.getElementById("close-outed").addEventListener("click", function() {
+ document.getElementById("settingcover").style.display = "none";
 });
 </script>
 <!-- POWER -->
