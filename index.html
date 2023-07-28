@@ -31,21 +31,23 @@
         <!--EXTRA BOTTOM BUTTONS-->
         <a href="#" onclick="randomUrl();" title="random 🎲 app"><img class="randobutt bottom-highlight" src="5butt/randobutt.png"></a>
         
-        <div><img title="settings ⚙️" class="settingbutt bottom-highlight"  src="5butt/settingbutt.png" id="settings-trigger"> <div class="aboutcover" id="settingcover">
+        <div><img title="settings ⚙️" class="settingbutt bottom-highlight"  src="5butt/settingbutt.png" id="settings-trigger"> <div class="settingcover" id="settingcover">
           <img class="close-btn" id="close-outed" src="consolebutt/goback.png">
           <div class="settings-content">
-             <h2>SETTINGS</h2>
+             <h2>Settings (wip)</h2>
              <hr>
-             <p>work in progro</p>
-        </div></div>
+             <p><b>Cursor Customization</b>: </p><br> <img  class="custom-cursor-image" src="cursors/whitecursor.png" alt="white" data-cursor="1"> &nbsp | &nbsp <img  class="custom-cursor-image" src="cursors/orangecursor.png" alt="orange" data-cursor="2"> &nbsp | &nbsp <img  class="custom-cursor-image" src="cursors/yellowcursor.png" alt="yellow" data-cursor="3"> &nbsp | &nbsp <img  class="custom-cursor-image" src="cursors/greencursor.png" alt="green" data-cursor="4"> &nbsp | &nbsp <img  class="custom-cursor-image" src="cursors/cyancursor.png" alt="cyan" data-cursor="5"> &nbsp | &nbsp <img  class="custom-cursor-image" src="cursors/purplecursor.png" alt="purple" data-cursor="6"> &nbsp | &nbsp <img  class="custom-cursor-image" src="cursors/pinkcursor.png" alt="pink" data-cursor="7">   <br><br><hr>
+            
+        </div></div></div>
 
         <div><img title="❓" class="questionbutt bottom-highlight"  src="5butt/questionbutt.png" id="question-trigger"> <div class="aboutcover" id="questioncover">
           <img class="close-btn" id="close-out" src="consolebutt/goback.png">
           <div class="question-content">
-             <h2>?</h2>
+             <h2>WHAT IS THIS?</h2>
              <hr>
-             <p>work in progro</p>
-        </div></div>
+             <p>This website is the final for Handmade Web - summer 2023. I wanted to be able to look back on my first web design experience through a fun and interactive Nintendo Switch interface. <br> <br> Something I enjoyed the most out of web design was the UX side, and I really wanted this project to reflect that. This final, as well as my passion project, included a lot of personally hand-drawn elements that I hope enhances the user's experience ☺ <br><br> This website is and will always be under construction!  <br> <hr>
+             </p>
+        </div><img style="float:left; width:18%; padding-top:3%; padding-left:3%" src="sparkle.png"><img style="float:right; width:23%; padding-top:31%; padding-right:2%; " src="bunbun.png"></div>
 
         <div><img title="power" class="powerbutt bottom-highlight"  src="5butt/powerbutt.png" id="power-trigger"> <div class="power" id="power">
           <img class="abutt" id="abutt" src="consolebutt/abutt.png">
@@ -54,10 +56,10 @@
         <div><img title="about シ" class="aboutbutt bottom-highlight"  src="5butt/aboutbutt.png" id="aboutcover-trigger"> <div class="aboutcover" id="aboutcover">
             <img class="close-btn" id="close-btn" src="consolebutt/goback.png">
             <div class="aboutcover-content">
-               <h2>ABOUT</h2>
+               <h2>ABOUT USER</h2>
                <hr>
-               <p>work in progro</p>
-          </div></div>
+               <p>Hi I'm Esther!  I'm a senior majoring in Communication Arts at VCU. I love illustrating characters and tabling at events. I hope to grow my business as well as create illustrations  for game companies in the future! </p>
+          </div><img style="float:right; width:23%; padding-top:3%; padding-right:3%" src="pisces.PNG"><img style="float:left; width:22%; padding-top:30%; padding-left:3%; " src="4-8-23.png"></div>
 
         <!--CONSOLE BUTTONS-->
         <img class="abutt butters" src="consolebutt/abutt.png">
@@ -115,7 +117,7 @@
         window.location.href = newUrl;
         }
       </script>
-<!-- ABOUT -->
+<!-- ABOUT/QUESTION/SETTINGS-->
 <script>
    document.getElementById("aboutcover-trigger").addEventListener("click", function() {
   document.getElementById("aboutcover").style.display = "block";
@@ -154,6 +156,26 @@ document.getElementById("close-outed").addEventListener("click", function() {
  
  </script>
        
+<!-- CURSOR SETTINGS -->
+<script>
+const customCursorImages = document.querySelectorAll('.custom-cursor-image');
+
+customCursorImages.forEach((imageElement) => {
+  imageElement.addEventListener('click', function() {
+    const cursorIndex = this.getAttribute('data-cursor');
+    
+
+    for (let i = 1; i <= customCursorImages.length; i++) {
+      document.body.classList.remove(`custom-cursor${i}`);
+    }
+    
+    document.body.classList.add(`custom-cursor${cursorIndex}`);
+  });
+});
+
+ </script>
+
+<!-- FLICKITY -->
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>

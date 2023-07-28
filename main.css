@@ -6,6 +6,7 @@ body {
     font-family: "a-otf-ud-shin-go-pr6n", sans-serif;
     font-weight: 300;
     font-style: normal;
+    cursor:default;
 }
 
 h1 {
@@ -176,6 +177,16 @@ margin: 2px -2px;}.upp {
     background-color: rgba(54, 54, 54, 0.979);
     z-index: 1; 
   }
+  .settingcover {
+    display: none;
+    position: absolute;
+    top: 16.6%;
+    left: 22%;
+    width: 53.7%;
+    height: 63.6%;
+    background-color: rgb(66, 66, 66);
+    z-index: 1; 
+  }
   
   .close-btn {
     position: absolute;
@@ -221,7 +232,28 @@ margin: 2px -2px;}.upp {
     z-index: 1; 
   }
   
-  
+  /* CURSORS */
+.custom-cursor1 {
+    cursor:url(cursors/whitecursor.png), auto;
+}
+.custom-cursor2 {
+    cursor:url(cursors/orangecursor.png), auto;
+}
+.custom-cursor3 {
+    cursor:url(cursors/yellowcursor.png), auto;
+}
+.custom-cursor4 {
+    cursor:url(cursors/greencursor.png), auto;
+}
+.custom-cursor5 {
+    cursor:url(cursors/cyancursor.png), auto;
+}
+.custom-cursor6 {
+    cursor:url(cursors/purplecursor.png), auto;
+}
+.custom-cursor7 {
+    cursor:url(cursors/pinkcursor.png), auto;
+}
 
 /* CAROUSEL */
 .caroucontainer {
