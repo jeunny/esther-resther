@@ -324,7 +324,7 @@ https://flickity.metafizzy.co
 .flickity-button:disabled{opacity:.3;cursor:auto;pointer-events:none}
 .flickity-button-icon{fill:currentColor}
 .flickity-prev-next-button{top:50%;width:44px;height:44px;border-radius:50%;transform:translateY(-50%)}
-.flickity-prev-next-button.previous{left:625em}.flickity-prev-next-button.next{right:.625em}.flickity-rtl .flickity-prev-next-button.previous{left:auto;right:625em}.flickity-rtl .flickity-prev-next-button.next{right:auto;left:625em}
+.flickity-prev-next-button.previous{left:625em}.flickity-prev-next-button.next{right:625em}.flickity-rtl .flickity-prev-next-button.previous{left:auto;right:625em}.flickity-rtl .flickity-prev-next-button.next{right:auto;left:625em}
 .flickity-prev-next-button .flickity-button-icon{position:absolute;left:20%;top:20%;width:60%;height:60%}
 .flickity-page-dots{position:absolute;width:100%;bottom:-25px;padding:0;margin:0;list-style:none;text-align:center;line-height:1}
 .flickity-rtl .flickity-page-dots{direction:rtl}
